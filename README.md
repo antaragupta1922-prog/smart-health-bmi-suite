@@ -1,2 +1,19 @@
-# smart-health-bmi-suite
-The **Smart Health &amp; BMI Suite** is a modular Python app for tracking physical wellness metrics. It computes BMI based on WHO standards, estimates daily calories (BMR), and calculates target weight ranges. Features include SHA-256 user authentication, SQLite history logging, input validation, and PyTest unit tests.
+# Smart Health & BMI Suite
+
+An architectural, multi-module Python application for monitoring physical metrics including Body Mass Index (BMI), Basal Metabolic Rate (BMR), and healthy weight targets.
+
+## Features
+- **User Authentication**: Multi-user support with SHA-256 encrypted password persistence.
+- **Health Metrics Calculation**: Implements standard BMI formulas and Mifflin-St Jeor equation for BMR.
+- **Input Validation**: Custom validation layer protecting against unexpected inputs or negative numbers.
+- **Data Analytics & Reports**: Tabular history visualization powered by SQLite.
+
+## Project Structure
+```text
+bmi_health_suite/
+├── src/            # Core business logic modules
+├── tests/          # Unit test suites (PyTest)
+├── main.py         # Application entry point
+├── requirements.txt
+├── statement.md
+└── README.md
